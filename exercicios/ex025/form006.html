@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulario</title>
+</head>
+<body>
+    <h1>Exemplos</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+        </p>
+        <p>
+            <label for="inivel">Nível de satifação:</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5">
+        </p>
+        <p>
+            <label for="ifoto">Foto de perfil: </label>
+            <input type="file" name="foto" id="ifoto"> <!--TEM QUE USAR O METODO POST PARA ENVIAR ARQUIVOS-->
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
