@@ -8,6 +8,7 @@
 <body>
     <h1>Exemplo de Form</h1>
     <form action="cadastro.php" method="POST">
+        
         <p>
             <label for="iest">Estado:</label>
             <select name="estado" id="iest">
@@ -26,6 +27,7 @@
                 
             </select>
         </p>
+
         <p>
             <label for="iprof">Profissão :</label>
             <input type="text" name="prof" id="iprof" list="listaprof">
@@ -36,10 +38,12 @@
                 <option>Professor</option>
             </datalist>
         </p>
+
         <p>
             <label for="imsg">Mensagem:</label><br>
             <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
         </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">

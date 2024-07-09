@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* ESTILOS PARA IMPRIMIR */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+article::after{
+    font-weight: bold;
+    content: 'Esse artigo foi impresso através dos meus estudos em media queries';
+}
+
+article{
+    width: 100%;
+    
+}
