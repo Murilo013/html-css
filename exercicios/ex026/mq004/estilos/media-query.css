@@ -2,6 +2,47 @@
 
 /* TODAS AS MÍDIAS */
 
+/* TYPICAL DEVICE BREAKPOINTS 
+
+Pequenas telas : até 600px   --  SITE FOI DESENVOLVIDO EM MOVILE FIRST ENTÃO NÃO PRECISA
+Celulares: 600px até 768px   --   TER UMA MEDIA QUERY PARA ESSAS RESOLUÇÕES
+
+Tablets: 768px até 992px
+
+desktop: 992px até 1200px
+
+Grandes Telas: acima de 1200px
+
+*/
+
 @media print {
 
+}
+
+@media screen and (min-width:768px) and (max-width:992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone{display: none;}
+    img#pc{display: block;}
+    
+}
+
+@media screen and (min-width:1200px){
+
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#phone{display: none;}
+    img#tv{display: block;}
+    
 }
